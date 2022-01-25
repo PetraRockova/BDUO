@@ -29,6 +29,12 @@ margin-bottom: 6px;
 margin-top: 30px;
 }
 
+@media (min-width: 992px) {
+.map {
+margin-top: 0;
+}
+}
+
 .day p {
 font-weight: 700;
 margin-bottom: 6px;
@@ -38,7 +44,7 @@ margin-bottom: 6px;
 @media (min-width: 500px) {
 .each-day {
 display: grid;
-grid-template-columns: 20% 1fr;
+grid-template-columns: 40% 1fr;
 }
 }
 
@@ -47,15 +53,17 @@ background-color: #B7B5B5;
 padding: 15px;
 }
 
+
 .copyright p{
 margin-bottom: 0;
-max-width:1400px;
+max-width: 1400px;
 margin: 0 auto;
-color: rgb(56, 56, 56)
+color: rgb(56, 56, 56);
+font-size: 0.875rem;
 }
 
-.h2-contact::after, .h2-hours::after, .h2-map::after {
-width: 45%;
-min-width: 300px;
-
+@media (min-width: 580px) {
+.copyright p{
+font-size: 1rem;
+}
 }
