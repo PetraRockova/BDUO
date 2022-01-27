@@ -30,21 +30,19 @@ color: variables.$text-color;
 background-color: white;
 border: variables.$border;
 height: 250px;
-max-width: 520px;
 padding: 30px;
-margin-right: 25px;
 }
 
 .row-info-box{
-justify-content: start;
 row-gap: 25px;
 }
 
 .container-info-box{
 margin: 0;
+padding-left: 0;
 }
 
-.info-box{
+.pos-rel{
 position: relative;
 }
 
@@ -62,11 +60,12 @@ border: none;
 align-items: center;
 }
 
+
 .more-actualities p{
 color: white;
 font-weight: 400;
-font-size: 20px;
 margin: 0;
+font-size: 1rem;
 margin-right: 10px;
 }
 
@@ -75,9 +74,9 @@ text-decoration: none;
 }
 
 .more-actualities{
-margin-top: 25 px;
+display: flex;
+justify-content: flex-end;
 }
-
 
 
 .list-square{
@@ -87,11 +86,9 @@ margin-bottom: 10px;
 }
 
 
-
 .placemen h3, .flat h3{
 margin: 0 0 0 10px;
 }
-
 
 .row-placemen{ 
 row-gap: 20px;
