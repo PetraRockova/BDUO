@@ -30,6 +30,10 @@ h1 {
   margin-bottom: 15px;
 }
 
+.container-fluid h1 {
+  margin: 30px 0;
+}
+
 @media (min-width: 992px) {
   h1 {
     margin-bottom: 0;
@@ -102,19 +106,64 @@ h3 {
   font-size: 1.2rem;
 }
 
-.navbar-bduo-search {
-  margin: 10px auto 60px auto;
-  max-width: 1400px;
+.logo {
+  width: 100px;
 }
 
+.navbar {
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.navbar .container-fluid {
+  display: block;
+}
+
+.container-fluid {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar-bduo-search {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .navbar-bduo-search {
+    height: 370px;
+    margin: 0;
+  }
+}
+.left-half, .slider {
+  flex-basis: 50%;
+}
+
+.left-half {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .left-half {
+    margin-bottom: 0;
+  }
+}
 .navbar-nav {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1920px;
   justify-content: center;
 }
 
 .form-control {
   border-radius: 20px;
+  display: inline-block;
+  width: auto;
 }
 
 .me-2 {
@@ -141,7 +190,12 @@ h3 {
 .navbar-toggler {
   display: flex;
   align-items: center;
-  padding: 0 0 10px 5px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.menu-toggler {
+  background-color: #B22825;
 }
 
 button:focus:not(:focus-visible) {
@@ -150,14 +204,13 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 992px) {
   .navbar-nav {
-    margin: 0 auto 30px auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid silver;
+    background-color: #B22825;
   }
 }
 .menu {
   margin-right: 12px;
   font-size: 1.2rem;
+  color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -188,11 +241,16 @@ button:focus:not(:focus-visible) {
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active {
   background-color: #B22825;
-  border-radius: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+  background-color: #B22825;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-  color: #FFFFFF;
+  color: #B22825;
+  background-color: white;
 }
 
 .bg-light {
@@ -200,24 +258,29 @@ button:focus:not(:focus-visible) {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 8px 5px;
+  padding: 16px 6px;
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 8px 35px;
+    padding: 8px 36px;
   }
 }
 @media (min-width: 1040px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 8px 40px;
+    padding: 16px 40px;
   }
 }
+.slider {
+  height: 100%;
+}
+
 .slider img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   max-height: 600px;
+  height: 100%;
 }
 
 footer {
@@ -273,7 +336,7 @@ footer {
   margin-bottom: 0;
   max-width: 1400px;
   margin: 0 auto;
-  color: #383838;
+  color: rgb(56, 56, 56);
   font-size: 0.875rem;
 }
 

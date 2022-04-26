@@ -35,6 +35,10 @@ h1{
 margin-bottom: 15px;
 }
 
+.container-fluid h1{
+margin: 30px 0;
+}
+
 @media (min-width: 992px) {
 h1 {margin-bottom: 0;}
 }
